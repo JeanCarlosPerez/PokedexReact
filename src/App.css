@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&display=swap');
+
+.botones{
+  background: transparent;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.cargando{
+  font-size: 1.5em;
+    color: #4a90e2; /* Un color azul, pero puedes elegir el que prefieras */
+    animation: parpadeo 1.5s infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titulo-retro {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5em; 
+  color: #3b4cca; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-image: url("https://files.oaiusercontent.com/file-LdYJZ07jSZ97pkYT2uYajjYv?se=2024-01-12T09%3A03%3A19Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Db31e1a20-fb2c-4489-84fd-5b0b159d2e0a.webp&sig=cNyDzce7EM73Fwe/iP/zGbK88e6c41HyFwvVi3SRx7E%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+img{
+  width: 160px;
+}
+
+nav{
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.Corazon-contador{
+  display: flex;
+}
+
+.Searchbar-container{
+  display: flex;
+  margin-right: 500px;
+  padding: 0px 20px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.Searchbar{
+  background-color: white;
+  margin-right: 20px;
+  border-radius: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Searchbar input{
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+  height: 54px;
+  border-radius: 50px;
 }
+
+.Searchbar input:focus {
+  outline: none;
+}
+.Searchbar-buttom{
+background-color: #363636;
+border: none;
+border-radius: 10px;
+height: 100%;
+color: white;
+padding: 10px 12px;
+}
+
+.Header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.Pokedex-grid{
+display: grid;
+gap: 20px;
+padding: 0px 10px;
+grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.Pokemon-card{
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.Pokemon-img-container{
+padding: 0px 5px;
+}
+
+.Card-body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 10px 10px 10px 10px;
+flex: 1;
+}
+
+.Card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Card-top h3{
+  text-transform: capitalize;
+}
+
+.Pokemon-type{
+  display: flex;
+}
+.Card-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Pokemon-type-text{
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.Pagination{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 460px) {
+  .Pokedex-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .Searchbar-container {
+    margin-left: 12em;
+  }
+
+  nav{
+    margin-right: 5em;
+  }
+  }
