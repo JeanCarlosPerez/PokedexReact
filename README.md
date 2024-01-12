@@ -12,7 +12,7 @@ Este proyecto es una aplicación web que utiliza la API de Pokemon para mostrar 
 
 - Detalles de Personajes: Al hacer clic en un personaje, los usuarios pueden ver más detalles, como la descripción completa y enlaces a recursos relacionados.
 
-![Fondo de primera pagina]()
+![Fondo de primera pagina](https://github.com/JeanCarlosPerez/PokedexReact/blob/master/public/Pantalla-principal.png?raw=true)
 
 ## Tecnologías Utilizadas 
 
@@ -35,7 +35,7 @@ Para ejecutar este proyecto en tu máquina local, asegúrate de tener instalado 
 
 1- Clona el repositorio:
 
-> git clone https://github.com/JeanCarlosPerez/ConsumoAPIMarvel.git
+> git clone https://github.com/JeanCarlosPerez/PokedexReact
 
 2- Navega al directorio del proyecto:
 
